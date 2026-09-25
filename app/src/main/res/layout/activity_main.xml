@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- App Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Network Monitor"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monitor your network connection"
+            android:textSize="15sp"
+            android:textColor="#A5B4FC"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="25dp" />
+
+
+        <!-- Connection Status -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="20dp"
+            android:background="#172554"
+            android:elevation="5dp"
+            android:layout_marginBottom="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="●  Connected"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#4ADE80" />
+
+            <TextView
+                android:id="@+id/txtConnection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checking network..."
+                android:textSize="14sp"
+                android:textColor="#BFDBFE"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- Section Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Network Tests"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="15dp" />
+
+
+        <!-- FIRST ROW -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Download Card -->
+            <LinearLayout
+                android:id="@+id/btnDownload"
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp"
+                android:background="#075985"
+                android:elevation="5dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="↓"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#7DD3FC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Download"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Speed"
+                    android:textSize="12sp"
+                    android:textColor="#BAE6FD"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- Upload Card -->
+            <LinearLayout
+                android:id="@+id/btnUpload"
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp"
+                android:background="#166534"
+                android:elevation="5dp"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="↑"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    android:textColor="#86EFAC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Speed"
+                    android:textSize="12sp"
+                    android:textColor="#BBF7D0"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+        <!-- SECOND ROW -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <!-- Ping Card -->
+            <LinearLayout
+                android:id="@+id/btnPing"
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp"
+                android:background="#7C2D12"
+                android:elevation="5dp"
+                android:layout_marginEnd="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="◉"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:textColor="#FDBA74" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ping"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Check Latency"
+                    android:textSize="12sp"
+                    android:textColor="#FED7AA"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+
+            <!-- Network Test Card -->
+            <LinearLayout
+                android:id="@+id/btnNetworkTest"
+                android:layout_width="0dp"
+                android:layout_height="145dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="15dp"
+                android:background="#581C87"
+                android:elevation="5dp"
+                android:layout_marginStart="8dp"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:textColor="#E9D5FF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Network Test"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test Network"
+                    android:textSize="12sp"
+                    android:textColor="#E9D5FF"
+                    android:layout_marginTop="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+
+        <!-- Network Assistant -->
+        <LinearLayout
+            android:id="@+id/btnNetworkAssistant"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#4338CA"
+            android:elevation="6dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Assistant"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find the best available network"
+                android:textSize="13sp"
+                android:textColor="#C7D2FE"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+
+        <!-- Bottom Space -->
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

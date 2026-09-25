@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0F172A">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtPingTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ping Test"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/txtPingSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check your network response time"
+        android:textSize="14sp"
+        android:textColor="#A5B4FC"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Server -->
+    <TextView
+        android:id="@+id/txtPingServer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test Server: google.com"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Loading Animation -->
+    <ProgressBar
+        android:id="@+id/progressPing"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="25dp" />
+
+    <!-- Ping Value -->
+    <TextView
+        android:id="@+id/txtPingValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0 ms"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="#FBBF24"
+        android:gravity="center"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/txtPingStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready to test"
+        android:textSize="15sp"
+        android:textColor="#94A3B8"
+        android:gravity="center"
+        android:layout_marginBottom="35dp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStartPing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Ping Test"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnPingBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="16sp" />
+
+</LinearLayout>

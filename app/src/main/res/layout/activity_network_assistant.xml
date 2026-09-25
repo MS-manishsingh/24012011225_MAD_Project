@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtAssistantTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Network Assistant"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/txtAssistantSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find a better network location nearby"
+            android:textSize="14sp"
+            android:textColor="#A5B4FC"
+            android:gravity="center"
+            android:layout_marginBottom="35dp" />
+
+        <!-- Current Network -->
+        <TextView
+            android:id="@+id/txtCurrentNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Network: --"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Current Signal -->
+        <TextView
+            android:id="@+id/txtCurrentSignal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Signal: --"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#38BDF8"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Current Status -->
+        <TextView
+            android:id="@+id/txtSignalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status: Ready"
+            android:textSize="16sp"
+            android:textColor="#94A3B8"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Loading -->
+        <ProgressBar
+            android:id="@+id/progressAssistant"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Scan Status -->
+        <TextView
+            android:id="@+id/txtScanStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to scan nearby area"
+            android:textSize="17sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Best Location -->
+        <TextView
+            android:id="@+id/txtBestLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Best Location: --"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4ADE80"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Best Signal -->
+        <TextView
+            android:id="@+id/txtBestSignal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Best Signal: --"
+            android:textSize="18sp"
+            android:textColor="#4ADE80"
+            android:gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <!-- Start Scan -->
+        <Button
+            android:id="@+id/btnStartAssistant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Area Scan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Guidance -->
+        <Button
+            android:id="@+id/btnStartGuidance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start Guidance"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:enabled="false"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Back -->
+        <Button
+            android:id="@+id/btnAssistantBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</ScrollView>

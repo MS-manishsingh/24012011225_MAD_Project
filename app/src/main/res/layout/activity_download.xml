@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#0F172A">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/txtDownloadTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download Speed"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/txtDownloadSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Test your internet download speed"
+        android:textSize="14sp"
+        android:textColor="#A5B4FC"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- SIM Selection -->
+    <TextView
+        android:id="@+id/txtSimTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select SIM"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp" />
+
+    <RadioGroup
+        android:id="@+id/simGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioSim1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SIM 1"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/radioSim2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SIM 2"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+    </RadioGroup>
+
+    <!-- Selected SIM -->
+    <TextView
+        android:id="@+id/txtSelectedSim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selected SIM: SIM 1"
+        android:textSize="15sp"
+        android:textColor="#A5B4FC"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Loading Animation -->
+    <ProgressBar
+        android:id="@+id/progressDownload"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Download Speed -->
+    <TextView
+        android:id="@+id/txtDownloadSpeed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.00 Mbps"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="#38BDF8"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/txtDownloadStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ready to test"
+        android:textSize="15sp"
+        android:textColor="#94A3B8"
+        android:gravity="center"
+        android:layout_marginBottom="30dp" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStartDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Download Test"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp" />
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="16sp" />
+
+</LinearLayout>
